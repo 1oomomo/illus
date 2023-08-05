@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            caret-color: transparent;
+        }
+        main{
+            min-height: calc(100vh - 120px);
+        }
+    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <header>
+        <nav id="SPheader" class="white_text">
+            <div class="header_container">
+                <a href="" class="header_site">MOMOLIO</a>
+                <div id="hum_icn" onclick="humActive(this.id,this.className)">
+                    <span></span><span></span><span></span>
+                </div>
+                <div id="modal_menu">
+                    <div class="scrim">
+                        <ul class="menu_containor">
+                            <li><a class="hum_menu">HOME</a></li>
+                            <li><a class="hum_menu">ILLUS</a></li>
+                            <li><a class="hum_menu">DESIGN</a></li>
+                            <li><a class="hum_menu">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </nav>
+        <nav id="PCheader" class="white_text">
+            <div class="header_container">
+                <a href="" class="header_site hidden_name">MOMORIO</a>
+                <div class="menu_wrap">
+                    <a class="menu">HOME</a>
+                    <a class="menu">ILLUS</a>
+                    <a class="menu">DESIGN</a>
+                    <a class="menu">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>ILLUS</h1>
+        <section id="list">
+            <ul data-name="limsig" onclick="activeModal(this)">
+                <li><img style="background-image: url(img/limsig.jpg);"></li>
+                <li>
+                    <h2>ILLUS TITLE</h2>
+                </li>
+                <li>
+                    <p class="date">2023.07.21</p>
+                </li>
+                <li class="tag_container">
+                    <p class="tag orig">オリジナル</p>
+                    <p class="tag fanart">HxH</p>
+                </li>
+                <li>
+                    <p class="text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </li>
+                <li class="link">
+                    <a><img src="img/link_icn.png" alt="link_icn"><span>外部リンク</span></a>
+                </li>
+            </ul>
+            <ul data-name="arcard" onclick="activeModal(this)">
+                <li><img style="background-image: url(img/arcard.jpg);"></li>
+                <li>
+                    <h2>ILLUS TITLE</h2>
+                </li>
+                <li>
+                    <p class="date">2023.07.21</p>
+                </li>
+                <li>
+                    <p class="text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </li>
+            </ul>
+            <ul data-name="illumi" onclick="activeModal(this)">
+                <li><img style="background-image: url(img/illumi.jpg);"></li>
+                <li>
+                    <h2>ILLUS TITLE</h2>
+                </li>
+                <li>
+                    <p class="date">2023.07.21</p>
+                </li>
+                <li>
+                    <p class="text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </li>
+            </ul>
+            <ul data-name="kurapika" onclick="activeModal(this)">
+                <li><img style="background-image: url(img/kurapika.jpg);"></li>
+                <li>
+                    <h2>ILLUS TITLE</h2>
+                </li>
+                <li>
+                    <p class="date">2023.07.21</p>
+                </li>
+                <li>
+                    <p class="text">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <section id="modal">
+        <div id="icn_container">
+            <div id="icn_position">
+                <div id="close_icn" onclick="activeModal()"><span></span><span></span></div>
+            </div>
+        </div>
+        <div id="img_container">
+            <div id="img"></div>
+        </div>
+    </section>
+    <footer>
+        @copylight
+    </footer>
+    <script src="open_modal.js"></script>
+</body>
+</html>
