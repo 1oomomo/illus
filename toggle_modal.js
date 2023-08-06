@@ -18,3 +18,6 @@ function humActive(id, className) {
         openHum(fadeInOutEl, humIcn);
     }
 }
+function disableModal(e) {
+    e.stopPropagation();
+}
